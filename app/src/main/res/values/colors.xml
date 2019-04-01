@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--Color transparent Black %-->
+    <color name="colorBlackTrans">#B3000000</color>
+    <color name="colorBlackTrans75">#BF000000</color>
+    <color name="colorBlackTrans90">#E6000000</color>
+    <color name="colorBlackTrans85">#D9000000</color>
+    <color name="colorBlackTrans80">#CC000000</color>
+    <color name="colorBlackTrans70">#B3000000</color>
+    <color name="colorBlackTrans65">#A6000000</color>
+    <color name="colorBlackTrans60">#99000000</color>
+    <color name="colorBlackTrans55">#8C000000</color>
+    <color name="colorBlackTrans50">#80000000</color>
+    <color name="colorBlackTrans45">#73000000</color>
+    <color name="colorBlackTrans40">#66000000</color>
+    <color name="colorBlackTrans35">#59000000</color>
+    <color name="colorBlackTrans30">#4D000000</color>
+    <color name="colorBlackTrans25">#40000000</color>
+    <color name="colorBlackTrans20">#33000000</color>
+    <color name="colorBlackTrans15">#26000000</color>
+    <color name="colorBlackTrans10">#1A000000</color>
+    <color name="colorBlackTrans5">#0D000000</color>
+    <!---->
+    <color name="colorLoginPhone">#42ae54</color>
+    <color name="colorEmail">#de5749</color>
+    <color name="colorBlueFacebook">#3B5998</color>
+    <color name="colorRedApp">#4293b9</color>
+    <color name="colorwhite">#ffffff</color>
+
+
+    <color name="app">#4293b9</color>
+    <color name="api">#1a739e</color>
+    <color name="color">#0c6691</color>
+    <color name="fff">#fff</color>
+    <color name="black">#000</color>
+    <color name="grayDark">#818181</color>
+</resources>
