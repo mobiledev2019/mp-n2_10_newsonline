@@ -22,18 +22,18 @@
                 android:id="@+id/Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
-                android:background="@color/colorRedApp"></android.support.v7.widget.Toolbar>
+                android:background="@color/colorRedApp" />
 
             <LinearLayout
-                android:layout_below="@+id/Toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#fff"></LinearLayout>
+                android:layout_below="@+id/Toolbar"
+                android:background="#fff" />
 
             <FrameLayout
                 android:id="@+id/showFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></FrameLayout>
+                android:layout_height="match_parent" />
         </RelativeLayout>
 
         <LinearLayout
@@ -125,38 +125,12 @@
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Tin tức"
+                    android:text="News"
                     android:textColor="@color/colorBlackTrans80"
                     android:textSize="@dimen/_10sdp" />
+
             </LinearLayout>
 
-            <!--<LinearLayout-->
-                <!--android:id="@+id/lo_weather"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<ImageView-->
-                    <!--android:layout_width="@dimen/_35sdp"-->
-                    <!--android:layout_height="@dimen/_35sdp"-->
-                    <!--android:layout_alignParentRight="true"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:padding="@dimen/_10sdp"-->
-                    <!--android:src="@mipmap/ic_weather"-->
-                    <!--android:tint="@color/colorBlackTrans80" />-->
-
-                <!--<com.garenalnews.common.CustomTextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:layout_marginBottom="@dimen/_2sdp"-->
-                    <!--android:layout_marginLeft="@dimen/_10sdp"-->
-                    <!--android:ellipsize="end"-->
-                    <!--android:singleLine="true"-->
-                    <!--android:text="Bản tin thời tiết"-->
-                    <!--android:textColor="@color/colorBlackTrans80"-->
-                    <!--android:textSize="@dimen/_10sdp" />-->
-            <!--</LinearLayout>-->
 
             <LinearLayout
                 android:id="@+id/lo_logout"

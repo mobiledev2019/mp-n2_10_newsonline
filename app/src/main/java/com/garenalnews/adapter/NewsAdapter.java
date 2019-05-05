@@ -13,24 +13,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import com.facebook.CallbackManager;
-//import com.facebook.FacebookCallback;
-//import com.facebook.FacebookException;
-//import com.facebook.messenger.MessengerUtils;
-//import com.facebook.messenger.ShareToMessengerParams;
-//import com.facebook.share.Sharer;
-//import com.facebook.share.model.ShareLinkContent;
-//import com.facebook.share.model.ShareMessengerGenericTemplateContent;
-//import com.facebook.share.model.ShareMessengerGenericTemplateElement;
-//import com.facebook.share.model.ShareMessengerURLActionButton;
-//import com.facebook.share.widget.MessageDialog;
-//import com.facebook.share.widget.ShareDialog;
+
 import com.garenalnews.R;
 import com.garenalnews.activity.DetailsActivity;
 import com.garenalnews.activity.MainActivity;
 import com.garenalnews.common.Config;
 import com.garenalnews.common.Untils;
-import com.garenalnews.dialog.DialogShare;
 import com.garenalnews.model.News;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
@@ -117,92 +105,7 @@ public class NewsAdapter extends BaseRecyclerAdapter<News, NewsAdapter.ViewHolde
                 }
             });
 
-//            imMore.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    DialogShare dialogShare = DialogShare.newInstance(mContext, new DialogShare.OnResult() {
-//                        @Override
-//                        public void facebook() {
-//                            CallbackManager callbackManager = CallbackManager.Factory.create();
-//                            ShareDialog shareDialog = new ShareDialog((Activity) mContext);
-//                            shareDialog.registerCallback(callbackManager, new FacebookCallback<Sharer.Result>() {
-//                                @Override
-//                                public void onSuccess(Sharer.Result result) {
-//                                    Toast.makeText(mContext, "Đã chia sẻ lên dòng thời gian của bạn",
-//                                            Toast.LENGTH_SHORT).show();
-//                                }
-//                                @Override
-//                                public void onCancel() {
-//                                    Toast.makeText(mContext, "Chia sẻ thất bại", Toast.LENGTH_SHORT).show();
-//                                }
-//                                @Override
-//                                public void onError(FacebookException error) {
-//                                    Toast.makeText(mContext, "Chia sẻ thất bại", Toast.LENGTH_SHORT).show();
-//                                }
-//                            });
-//                            if (ShareDialog.canShow(ShareLinkContent.class)) {
-//                                ShareLinkContent linkContent = new ShareLinkContent.Builder()
-//                                        .setContentUrl(Uri.parse(news.getLink()))
-//                                        .build();
-//                                shareDialog.show(linkContent);
-//                            }
-//                        }
-//
-//                        @Override
-//                        public void gmail() {
-//                            Intent intent = new Intent(Intent.ACTION_SENDTO);
-//                            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-//                            intent.putExtra(Intent.EXTRA_TEXT, news.getLink());
-//                            intent.putExtra(Intent.EXTRA_SUBJECT, news.getContent());
-//                            if (intent.resolveActivity(mContext.getPackageManager()) != null) {
-//                                mContext.startActivity(intent);
-//                            } else {
-//                                Toast.makeText(mContext, "Xảy ra lỗi, vui lòng thử lại sau.",
-//                                        Toast.LENGTH_SHORT).show();
-//                            }
-//                        }
-//
-//                        @Override
-//                        public void zalo() {
-//
-//                        }
-//
-//                        @Override
-//                        public void messenger() {
-//                            if (mainActivity.getUser().getId() == null ||
-//                                    mainActivity.getUser().getId().equals("")) {
-//                                Toast.makeText(mContext, "Bạn phải đăng nhập facebook để tiếp tục.",
-//                                        Toast.LENGTH_LONG).show();
-//                                return;
-//                            }
-//                            ShareMessengerURLActionButton actionButton =
-//                                    new ShareMessengerURLActionButton.Builder()
-//                                            .setTitle(news.getTitle())
-//                                            .setUrl(Uri.parse(news.getLink()))
-//                                            .build();
-//                            ShareMessengerGenericTemplateElement genericTemplateElement =
-//                                    new ShareMessengerGenericTemplateElement.Builder()
-//                                            .setTitle(news.getTitle())
-//                                            .setSubtitle(news.getContent())
-//                                            .setImageUrl(Uri.parse(news.getImage()))
-//                                            .setButton(actionButton)
-//                                            .build();
-//                            ShareMessengerGenericTemplateContent genericTemplateContent =
-//                                    new ShareMessengerGenericTemplateContent.Builder()
-//                                            .setPageId(mainActivity.getUser().getId()) // Your page ID, required
-//                                            .setGenericTemplateElement(genericTemplateElement)
-//                                            .build();
-//                            try {
-//                                MessageDialog.show(mainActivity, genericTemplateContent);
-//                            } catch (Exception e) {
-//                                Toast.makeText(mContext, "Xảy ra lỗi, vui lòng thử lại sau.",
-//                                        Toast.LENGTH_LONG).show();
-//                            }
-//                        }
-//                    });
-//                    dialogShare.show();
-//                }
-//            });
+
         }
     }
 }

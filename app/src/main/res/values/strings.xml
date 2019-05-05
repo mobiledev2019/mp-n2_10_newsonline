@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">GarenalNews</string>
-    <string name="FACEBOOK_APP_ID">617340928614530</string>
-    <string name="ACCOUNT_KIT_CLIENT_TOKEN">9f8439adbd9f3a8ff96a9a6122c748ae</string>
-    <string name="fb_login_protocol_scheme">fb617340928614530</string>
-    <string name="news">Tin tức</string>
+    <string name="news">News</string>
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
 </resources>

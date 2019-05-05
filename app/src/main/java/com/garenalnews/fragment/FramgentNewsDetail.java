@@ -111,13 +111,13 @@ public class FramgentNewsDetail extends Fragment {
                     String title = element.get(i).getElementsByTag("title").first().text();
                     String putDate = elements.getElementsByTag("pubDate").first().text();
                     String links = elements.getElementsByTag("link").first().text();
-                    String image = elements.getElementsByTag("image").first().text();
+                    //String image = elements.getElementsByTag("image").first().text();
                     Element element1 = elements.getElementsByTag("description").first();
                     News news = new News();
                     news.setTitle(title);
                     news.setContent(getContent(element1.text()));
                     news.setLink(links);
-                    news.setImage(image);
+                    news.setImage(getImage(element1.text()));
                     news.setDate(putDate);
                     list.add(news);
                 }
